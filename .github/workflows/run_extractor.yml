@@ -1,6 +1,6 @@
 name: Run Document Title Extractor
 
-on:
+'on':
   workflow_dispatch:
 
 permissions:
@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
